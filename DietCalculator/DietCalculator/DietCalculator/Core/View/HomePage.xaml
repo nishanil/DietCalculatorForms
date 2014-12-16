@@ -1,0 +1,61 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+					   xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+					   x:Class="DietCalculator.Core.View.HomePage">
+  <TableView HorizontalOptions="FillAndExpand" VerticalOptions = "FillAndExpand" Intent= "Form" >
+    <TableRoot Title="Diet Calculator">
+      <TableSection Title="Age">
+        <EntryCell Label="Age:" Placeholder="ex. 25" Text="{Binding Age}"  />
+      </TableSection>
+      <TableSection Title="Gender">
+        <ViewCell>
+          <Picker Title ="Select Gender.."  SelectedIndex="{Binding SelectedGenderIndex}" >
+            <Picker.Items>
+              <x:String>Male</x:String>
+              <x:String>Female</x:String>
+       
+            </Picker.Items>
+          </Picker>
+        </ViewCell>
+      </TableSection>
+     <TableSection Title="Height &amp; Weight">
+        <EntryCell Label="Weight (in kg):" Placeholder="ex. 65" Text ="{Binding Weight}"  />
+        <EntryCell Label="Height (in cm):" Placeholder="ex. 170" Text ="{Binding Height}" />
+      </TableSection>
+       <TableSection Title="Waist &amp; Hips">
+        <EntryCell Label="Waist (in cm):" Placeholder="ex. 47" Text ="{Binding Waist}"  />
+        <EntryCell Label="Hips (in cm):" Placeholder="ex. 88" Text ="{Binding Hips}" IsEnabled="{Binding HipsEnabled}" />
+      </TableSection>
+      <TableSection Title="Ideal Weight &amp; BMI">
+        <EntryCell Label="Ideal Weight (in kg):" Placeholder="ex. 65" Text ="{Binding IdealWeight}" />
+        <EntryCell Label="Ideal BMI (in kg/m2):" Placeholder="ex. 170" Text ="{Binding IdealBMI}" />
+      </TableSection>
+      <TableSection Title="Cholesterol &amp; HDL">
+        <EntryCell Label="Cholesterol (in mmol/L):" Placeholder="ex. 5.17" Text ="{Binding Cholesterol}" />
+        <EntryCell Label="HDL (in mmol/L):" Placeholder="ex. 170" Text ="{Binding HDL}" />
+      </TableSection>
+      <TableSection Title="Neck">
+        <EntryCell Label="Neck (in cm):" Placeholder="ex. 30" Text ="{Binding Neck}" />
+
+      </TableSection>
+        <TableSection Title="Level of Activity">
+        <ViewCell>
+          <Picker Title ="Select Level of Activity.." SelectedIndex="{Binding SelectedLevelOfActivityIndex}"  >
+            <Picker.Items>
+              <x:String>Sedentary</x:String>
+              <x:String>Moderate</x:String>
+              <x:String>Active</x:String>
+            <x:String>None</x:String>
+            </Picker.Items>
+          </Picker>
+        </ViewCell>
+      </TableSection>
+      <TableSection>
+        <ViewCell>
+          <Button Command="{Binding CalculateCommand}" Text="Calculate" HorizontalOptions="FillAndExpand" VerticalOptions="FillAndExpand" />
+        </ViewCell>
+      </TableSection>
+    </TableRoot>
+  </TableView>
+  
+</ContentPage>

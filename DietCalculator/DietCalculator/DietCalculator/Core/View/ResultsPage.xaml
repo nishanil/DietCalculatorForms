@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+					   xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+					   x:Class="DietCalculator.Core.View.ResultsPage">
+  <TableView HorizontalOptions="FillAndExpand" VerticalOptions = "FillAndExpand" Intent= "Form" >
+    <TableRoot Title="Diet Calculator">
+      <TableSection Title="Results">
+        <TextCell Text="Calories Per Day"   Detail="{Binding CaloriesPerDay}" />
+        <TextCell Text="Lean Body Mass"     Detail="{Binding LeanBodyMass}" />
+        <TextCell Text="Percent Body Fat"   Detail="{Binding PercentBodyFat}"/>
+        <TextCell Text="Waist Hips Ratio"   Detail="{Binding WaistHipsRatio}"/>
+        <TextCell Text="BMI"                Detail="{Binding BMI}"/>
+        <TextCell Text="Cholesterol Ratio"  Detail="{Binding CholesterolRatio}"/>
+        <TextCell Text="Waist Height Ratio"  Detail="{Binding WaistHeightRatio}"/>
+        <TextCell Text="Ideal Weight"       Detail="{Binding IdealWeight}" />
+      </TableSection>
+    </TableRoot>
+  </TableView>
+</ContentPage>
