@@ -9,9 +9,15 @@ DietCalculator built for 4 mobile platforms(iOS, Android, & Universal Windows) u
 
 DietCalculator is a Silverlight MVC application written few years ago that calcuates daily diet requirements based on few inputs from the user. [Check this blog](http://www.silverlightshow.net/items/Exploring-the-Model-View-Controller-MVC-pattern.aspx )
 
-
+![DieCalculator](https://raw.githubusercontent.com/nishanil/DietCalculatorForms/master/Screenshots/DietCalculator-Silverlight-MVC.png)
 
 ## Port to Mobile 
+
+<center>
+<img src="https://raw.githubusercontent.com/nishanil/DietCalculatorForms/master/Screenshots/iOS-1.png" width="150"/>
+<img src="https://raw.githubusercontent.com/nishanil/DietCalculatorForms/master/Screenshots/Android.png" width="200"/>
+<img src="https://raw.githubusercontent.com/nishanil/DietCalculatorForms/master/Screenshots/UWP.png" width="200"/>
+</center>
 
 Many .NET developers working on the Windows platform don’t realize that lots of existing .NET code can easily be ported to all the popular mobile platforms, including iOS and Android. Almost any .NET codebase, including Windows Forms, WPF, ASP.NET, and Silverlight, has sharable code that can be ported to Xamarin.iOS, Xamarin.Android, and Universal Windows platforms. 
 
